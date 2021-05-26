@@ -39,3 +39,37 @@ function selectOperation(arithmeticOperation) {
   previousOperation = currentOperation;
   currentOperation = '';
 }
+
+function calculate() {
+  let calculate;
+  const previousOp = parseFloat(previousOperation);
+  const currentOp  = parseFloat(currentOperation);
+
+  if(isNaN(previousOp) || isNaN(currentOp)) return;
+
+  switch(operation) {
+    case '+':
+      calculate = previousOp + currentOp;
+      break;
+    case '-':
+      calculate = previousOp - currentOp;
+      break;
+    case 'x':
+      calculate = previousOp * currentOp;
+      break;
+    case '/':
+      calculate = previousOp / currentOp;
+      break;
+    default:
+      return;
+  }
+
+  currentOperation = calculate;
+  operation = undefined;
+  previousOperation = '';
+}
+
+function addNumber(number) {
+  currentOperation = currentOperation.toString() + number.toString();
+  updateDisplay();
+}
