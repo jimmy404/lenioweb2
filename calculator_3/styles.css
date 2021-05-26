@@ -1,3 +1,15 @@
 body {
   background: linear-gradient(90deg, rgba(15,152,0,0.8463760504201681) 0%, rgba(227,28,28,0.7707457983193278) 29%, rgba(255,0,0,0.6558998599439776) 100%);
 }
+
+.calculator__grid > input {
+  background-color: rgba(255, 255, 255, .75);
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+}
+
+.calculator__grid > input:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
