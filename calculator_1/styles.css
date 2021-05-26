@@ -4,3 +4,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.calculator__grid--output {
+  background-color: rgb(194, 215, 172);
+  border: 4px solid black;
+  border-radius: 2px;
+}
+.calculator__grid--output .calculator__grid--display {
+  color: rgb(14, 31, 12);
+  font-size: 3rem;
+  text-align: right;
+}
+
+.calculator__grid > button:hover {
+  background-color: rgba(206, 203, 203, 0.9);
+}
