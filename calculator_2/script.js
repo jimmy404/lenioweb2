@@ -7,3 +7,15 @@ let result          = document.getElementById('result'),
   currentOperation  = '',
   previousOperation = '',
   operation         = undefined;
+
+numberButton.forEach(function(button) {
+  button.addEventListener('click', function() {
+    addNumber(button.innerText);
+  })
+});
+
+operatorButton.forEach(function(button) {
+  button.addEventListener('click', function() {
+    selectOperation(button.innerText);
+  })
+});
