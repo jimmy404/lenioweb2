@@ -9,3 +9,8 @@ function removeZero() {
     document.getElementById("outputDisplay").innerHTML = value;
   }
 }
+
+function printValueButton(value) {
+  removeZero();
+  document.getElementById("outputDisplay").innerHTML += value;
+}
