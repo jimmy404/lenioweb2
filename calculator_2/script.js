@@ -79,3 +79,7 @@ function clear() {
   previousOperation = '';
   operation = undefined;
 }
+
+function updateDisplay() {
+  result.value = currentOperation;
+}
