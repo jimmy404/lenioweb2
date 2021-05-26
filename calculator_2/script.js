@@ -19,3 +19,13 @@ operatorButton.forEach(function(button) {
     selectOperation(button.innerText);
   })
 });
+
+equalButton.addEventListener('click', function() {
+  calculate();
+  updateDisplay();
+});
+
+deleteButton.addEventListener('click', function() {
+  clear();
+  updateDisplay();
+});
