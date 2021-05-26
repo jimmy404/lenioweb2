@@ -29,3 +29,13 @@ deleteButton.addEventListener('click', function() {
   clear();
   updateDisplay();
 });
+
+function selectOperation(arithmeticOperation) {
+  if ( currentOperation === '' ) return;
+  if ( previousOperation !== '' ) {
+    calculate();
+  }
+  operation = arithmeticOperation.toString();
+  previousOperation = currentOperation;
+  currentOperation = '';
+}
