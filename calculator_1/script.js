@@ -14,3 +14,10 @@ function printValueButton(value) {
   removeZero();
   document.getElementById("outputDisplay").innerHTML += value;
 }
+
+function mathOperationResult() {
+  removeZero();
+  let mathOperation = document.getElementById("outputDisplay").innerHTML;
+  let solvedMathOperation = eval(mathOperation);
+  document.getElementById('outputDisplay').innerHTML = solvedMathOperation;
+}
