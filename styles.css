@@ -6,3 +6,41 @@ body {
   justify-content: center;
   margin: 0;
 }
+
+nav {
+  height: 100px;
+  width: 500px;
+}
+
+ul {
+  align-items: center;
+  background-image: linear-gradient(to right, #096b00, #16700c, #207617, #287b20, #308128, #45831d, #578411, #688500, #8a7e00, #b06f00, #d85400, #ff0000);  display: flex;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li button {
+  border-radius: 2px;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li button:hover {
+  background-color: rgb(174, 204, 155);
+}
