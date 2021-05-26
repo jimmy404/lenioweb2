@@ -3,3 +3,50 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.calculator__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.calculator__grid {
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.calculator__grid > button {
+  background-color: rgba(255, 255, 255, .75);
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+}
+
+.calculator__grid--output {
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  justify-content: space-around;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calculator__grid--output .calculator__grid--display {
+  color: black;
+  font-size: 1.85rem;
+  text-align: right;
+}
+
+.calculator__grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
