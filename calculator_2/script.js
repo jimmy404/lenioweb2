@@ -73,3 +73,9 @@ function addNumber(number) {
   currentOperation = currentOperation.toString() + number.toString();
   updateDisplay();
 }
+
+function clear() {
+  currentOperation = '';
+  previousOperation = '';
+  operation = undefined;
+}
